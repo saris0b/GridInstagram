@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid instagram</title>
+    <!-- estilos css -->
+    <style>
+     .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 8px;
+    }
+    .a {
+        grid-column: span 2 / span 2;
+        grid-row: span 8 / span 8;
+        background-color: rgb(72, 119, 186);
+        height: 100hv;
+    }
+    .b {
+        grid-column: span 7 / span 7;
+        grid-column-start: 3;
+        background-color: rgb(211, 104, 104);
+        height: 180px;
+    }
+    .c {
+        grid-column: span 7 / span 7;
+        grid-row: span 7 / span 7;
+        grid-column-start: 3;
+        grid-row-start: 2;
+        background-color: rgb(180, 96, 183);
+        height: 1500px;
+    }
+    .d {
+        grid-column: span 3 / span 3;
+        grid-row: span 8 / span 8;
+        grid-column-start: 10;
+        grid-row-start: 1;
+        background-color: rgb(110, 197, 107);
+        height: 105vh;
+    }
+    /*incorporo el mediaquerie de resolucion 1263px el nav se reduce*/
+    @media (min-width: 1159px) and (max-width:1263px) {
+         .a {
+        grid-column: span 1 / span 1;
+        grid-row: span 8 / span 8;
+        background-color: rgb(72, 119, 186);
+        height: 100hv;   
+         }
+         .d {
+            display: none;
+         }
+         .b{
+        grid-column: span 11 / span 11;
+        grid-column-start: 2;
+        background-color: rgb(211, 104, 104);
+        height: 180px; 
+         }
+
+         .c{
+        grid-column: span 11 / span 11;
+        grid-row: span 7 / span 7;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        background-color: rgb(180, 96, 183);
+        height: 1350px; 
+     }
+      }
+    /*incorporo el mediaquerie de resolucion 1159px el nav se reduce*/
+    @media (min-width: 767px) and (max-width: 1159px){
+        .a{
+        grid-column: span 1 / span 1;
+        grid-row: span 8 / span 8;
+        background-color: rgb(72, 119, 186);
+        height: 100hv; 
+        }
+        .d{
+            display: none 
+        }
+        .b {
+        grid-column: span 12 / span 12;
+        grid-column-start: 2;
+        background-color: rgb(211, 104, 104);
+        height: 180px;   
+        }
+        .c {
+        grid-column: span 12 / span 12;
+        grid-row: span 7 / span 7;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        background-color: rgb(180, 96, 183);
+        height: 1350px; 
+        }
+    }   
+    /*incorporo el mediaquerie de resolucion 767px el nav se reduce*/
+    @media (min-width: 10px) and (max-width: 767px){
+
+        .d{
+            display: none;
+        }
+        .b{
+        grid-column: span 12 / span 12;
+        grid-row-start:  1;
+        grid-column-start: 1;
+        background-color:aqua
+        height: 180px;  
+        }
+        .c{
+        grid-column: span 12 / span 12;
+        grid-row: span 6 / span 6;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        background-color: rgb(89, 86, 215);
+        height: 1350px;  
+        }
+        .a{
+        grid-column: span 12 / span 12;
+        grid-row: span 8 / span 8;
+        background-color: rgb(72, 119, 186);
+        height: 100hv;
+        }
+    }
+
+     
+    </style>
+    
+</head>
+<body>
+    
+<div class="container">
+    <nav class="a">
+        <h2>A</h2>
+    </nav>
+    <header class="b">
+        <h2>B</h2>
+    </header>
+    <section class="c">
+        <h2>C</h2>
+    </section>
+    <aside class="d">
+        <h2>D</h2>
+    </aside>
+</div>
+    
+</body>
+</html>
