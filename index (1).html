@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- estilos css -->
     <style>
-     .container {
+     .container-fluid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(8, 1fr);
@@ -16,7 +17,7 @@
         grid-column: span 2 / span 2;
         grid-row: span 8 / span 8;
         background-color: rgb(72, 119, 186);
-        height: 100hv;
+        height: 1188px;
     }
     .b {
         grid-column: span 7 / span 7;
@@ -30,7 +31,7 @@
         grid-column-start: 3;
         grid-row-start: 2;
         background-color: rgb(180, 96, 183);
-        height: 1500px;
+        height: 1000px;
     }
     .d {
         grid-column: span 3 / span 3;
@@ -38,7 +39,7 @@
         grid-column-start: 10;
         grid-row-start: 1;
         background-color: rgb(110, 197, 107);
-        height: 105vh;
+        height: 1188px;
     }
     /*incorporo el mediaquerie de resolucion 1263px el nav se reduce*/
     @media (min-width: 1159px) and (max-width:1263px) {
@@ -46,7 +47,7 @@
         grid-column: span 1 / span 1;
         grid-row: span 8 / span 8;
         background-color: rgb(72, 119, 186);
-        height: 100hv;   
+        height: 1544px;   
          }
          .d {
             display: none;
@@ -73,7 +74,7 @@
         grid-column: span 1 / span 1;
         grid-row: span 8 / span 8;
         background-color: rgb(72, 119, 186);
-        height: 100hv; 
+        height: 100vh; 
         }
         .d{
             display: none 
@@ -90,12 +91,12 @@
         grid-column-start: 2;
         grid-row-start: 2;
         background-color: rgb(180, 96, 183);
-        height: 1350px; 
+        height: 1010px; 
         }
     }   
     /*incorporo el mediaquerie de resolucion 767px el nav se reduce*/
-    @media (min-width: 10px) and (max-width: 767px){
-
+    @media (min-width: 10px) and (max-width: 767px)
+    {
         .d{
             display: none;
         }
@@ -104,31 +105,30 @@
         grid-row-start:  1;
         grid-column-start: 1;
         background-color:aqua
-        height: 180px;  
+        height 180px;  
         }
         .c{
         grid-column: span 12 / span 12;
-        grid-row: span 6 / span 6;
+        grid-row: span 0 / span ;
         grid-column-start: 1;
         grid-row-start: 2;
         background-color: rgb(89, 86, 215);
-        height: 1350px;  
+        height: 100%;  
         }
         .a{
         grid-column: span 12 / span 12;
-        grid-row: span 8 / span 8;
+        grid-row: span 1 / span 1;
         background-color: rgb(72, 119, 186);
-        height: 100hv;
+        height: 100px;
         }
-    }
-
+       }
      
     </style>
     
 </head>
 <body>
     
-<div class="container">
+<div class="container-fluid">
     <nav class="a">
         <h2>A</h2>
     </nav>
@@ -142,6 +142,7 @@
         <h2>D</h2>
     </aside>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
 </body>
 </html>
